@@ -1,49 +1,220 @@
 <!DOCTYPE html>
-<html lang="en-EN">
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="index.css">
-    <title>Nana's Attic</title>
+  <meta charset="UTF-8" />
+  <title>Nana's Attic | Vintage Treasures</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="index.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600&family=Montserrat:wght@300;500;700&display=swap"
+    rel="stylesheet" />
+  <script src="index.js" defer></script>
 </head>
+
 <body>
 
-    <div class="scene">
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="#hero" class="brand">
+        <img src="img/Title.jpeg" class="brand-logo" alt="Nana's Attic logo">
+      </a>
 
-        <img id="title" class="item" src="img/Title.jpeg">
-
-        <img id="cashier" class="item" src="img/Cashier.jpeg">
-
-        <img id="girlRack" class="item" src="img/GirlClothesRack.jpeg">
-
-        <img id="kidRack" class="item" src="img/ClothesRack1.jpeg">
-        
-        <img id="mirror" class="item" src="img/Mirror.jpeg">
-
-        <img id="roundRack" class="item" src="img/ClothesRack2.jpeg">
-
-        <img id="clothesBox" class="item" src="img/ClothesBox.jpeg">
-
-        <div id="cashierBubble" class="popup">
-            Welcome to Nana's Attic! How can I help you today?
-        </div>
-
-        <div id="kidRackBubble" class="popup">
-            This children’s pieces came from the late 1970s through the 1990s. 
-            Clothing like this was popular for its bold colors, durable fabrics, 
-            and playful patterns. They were common in everyday school outfits and
-            weekend outings. It was typically worn by kids who grew up during the
-            retro era of hand-me-downs, outdoor activities, and practical fashion.
-        </div>
-
-        <div id="roundRackBubble" class="popup">
-            These dresses came from a boutique that carried styles from the 1980s to the early 
-            2000s. Dresses like this were especially popular for casual gatherings, school
-            dances, and picnics. They were often worn by young adults who loved
-            expressive prints, soft fabrics, and the mix of retro and early-2000s aesthetics.
-        </div>
-
+      <nav class="main-nav">
+        <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+        <ul class="nav-links">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#tops">Tops</a></li>
+          <li><a href="#boots">Boots</a></li>
+          <li><a href="#dresses">Dresses</a></li>
+        </ul>
+      </nav>
     </div>
+  </header>
 
-    <script src="index.js"></script>
+  <main>
+
+    <!-- Home / Hero -->
+    <section id="hero" class="hero section">
+      <div class="hero-inner">
+        <div class="hero-text">
+          <h1>Welcome to Nana's Attic</h1>
+          <p class="bio-name">Samantha Stone:</p>
+          <p class="bio-text">
+            I’m the woman behind Nana’s Attic—born in New York City, polished by couture, and roughed up just enough by
+            decades of late-night glamour. I never bothered with kids; I raised collections instead—leather jackets that
+            survived studio basements, silk gowns that outlived their scandals, and more cigarettes than I’d ever admit.
+            After a lifetime designing for runways, slipping into dresses meant for trouble, and dancing through nights
+            that blurred into decades, I decided to “retire.” So here I am in Santa Cruz, opening a boutique that smells
+            like old velvet, good perfume, and a little mischief.
+            Elegant? Of course. Grungy? Always. And every piece in my shop carries a bit of my attitude—seasoned,
+            stylish, and still very much a crazy free spirit.
+          </p>
+          
+          <div class="hero-actions">
+            <a href="#boots" class="btn primary">Browse Collections</a>
+            <button id="fun-fact-btn" class="btn ghost">Show a Vintage Fun Fact</button>
+          </div>
+
+          <p id="fun-fact" class="fun-fact"></p>
+        </div>
+
+        <div class="hero-visual">
+          <img src="img/Nana.JPG" class="hero-image" alt="Cashier at counter">
+        </div>
+      </div>
+    </section>
+
+    <!-- Tops gallery -->
+    <section id="tops" class="section">
+      <div class="section-inner">
+        <h2>Tops</h2>
+        <div class="gallery-grid">
+          <button class="history-item" data-image="img/Top1.png"
+            data-history="This Victorian top made in 1843 is a one of a kind. It features some wear a tear due to it being worn throughout time and now simply a display piece. Due to this and the discoloration it is $6,530.">
+            <img src="img/Top1.png" alt="Vintage top 1">
+          </button>
+
+          <button class="history-item" data-image="img/Top2.png"
+            data-history="This corset is made entirely with Swarovski crystals. It was made in 1960 for balls and galas. One of my personal favorite pieces as it demonstrates timeless beauty and elegance. Now priced at $15,200.">
+            <img src="img/Top2.png" alt="Vintage top 2">
+          </button>
+
+          <button class="history-item" data-image="img/Top3.png"
+            data-history="This stunning corset is hand sewn with intricate detailing. Inspired by the Victoria Era it was made in 1983 for Princess Diana. Due to this, it is $730,500.">
+            <img src="img/Top3.png" alt="Vintage top 3">
+          </button>
+
+          <button class="history-item" data-image="img/Top4.png"
+            data-history="A very unique and fun piece designed by Dior for the 2023 Vogue Runway. It was inspired by the new remake of The Little Mermaid starring Halle Bailey. Priced at $9,420.">
+            <img src="img/Top4.png" alt="Vintage top 4">
+          </button>
+
+          <button class="history-item" data-image="img/Top5.png"
+            data-history="This super cute and more simple top is very reasonably priced at $184. It is the least expensive piece we currently have.">
+            <img src="img/Top5.png" alt="Vintage top 5">
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Boots gallery -->
+    <section id="boots" class="section section-soft">
+      <div class="section-inner">
+        <h2>Boots</h2>
+        <div class="gallery-grid">
+          <button class="history-item" data-image="img/Boot1.png"
+            data-history="Very unique style and design. One of our most popular products. One of the only items that we have multiple pairs of various colors. Priced at $360.">
+            <img src="img/Boot1.png" alt="Vintage boot 1">
+          </button>
+
+          <button class="history-item" data-image="img/Boot2.png"
+            data-history="Super timeless and flirty lace leather boots. Very fun and comfortable shoes, $536.">
+            <img src="img/Boot2.png" alt="Vintage boot 2">
+          </button>
+
+          <button class="history-item" data-image="img/Boot3.png"
+            data-history="The design on these leather shoes are truly amazing. So much attention to detail and hand stitching. They are $724.">
+            <img src="img/Boot3.png" alt="Vintage boot 3">
+          </button>
+
+          <button class="history-item" data-image="img/Boot4.png"
+            data-history="These boots were made in the 1970’s and perfectly encapsulate the era. They are so so fun and comfortable. Going for $530.">
+            <img src="img/Boot4.png" alt="Vintage boot 4">
+          </button>
+
+          <button class="history-item" data-image="img/Boot5.png"
+            data-history="These may be favorite shoes we’ve ever had in store. Made in 1990 they are the perfect combination of elegance and grunge. The massive buckle is absolutely stunning. $7,860.">
+            <img src="img/Boot5.png" alt="Vintage boot 5">
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Dresses gallery -->
+    <section id="dresses" class="section">
+      <div class="section-inner">
+        <h2>Dresses</h2>
+        <div class="gallery-grid">
+          <button class="history-item" data-image="img/Dress1.png"
+            data-history="This Victorian Style dress is a one of a kind, hand-made in the 1840’s for Queen Victoria herself. This is currently priced at $7,500,550, our most expensive piece.">
+            <img src="img/Dress1.png" alt="Vintage dress 1">
+          </button>
+
+          <button class="history-item" data-image="img/Dress2.png"
+            data-history="This dress is also of the Victorian Era. It was created during the 1800’s for the princesses and younger girls of the family. It is both beautiful and functional, as the little ones would constantly be running around. Priced at $208,600.">
+            <img src="img/Dress2.png" alt="Vintage dress 2">
+          </button>
+
+          <button class="history-item" data-image="img/Dress3.png"
+            data-history="This grunge yet vintage dress features beautiful art work, vindictive of the expressionist era. However, it is not an original so it is priced quite reasonably at $8,600">
+            <img src="img/Dress3.png" alt="Vintage dress 3">
+          </button>
+
+          <button class="history-item" data-image="img/Dress4.png"
+            data-history="This dress is one of a kind, specifically designed as lingerie for Florence Nightingale. It is an absolutely stunning number and listed for $800,564.">
+            <img src="img/Dress4.png" alt="Vintage dress 4">
+          </button>
+
+          <button class="history-item" data-image="img/Dress5.png"
+            data-history="This dress was a typical school girl uniform during the 1950’s. Little girls wore these for daytime activities like sewing, reading, and helping their mother’s cook and clean around the home. It is currently only $984.">
+            <img src="img/Dress5.png" alt="Vintage dress 5">
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Visit / Sign-up -->
+    <section id="visit" class="section section-soft">
+      <div class="visit-inner">
+        <div>
+          <h2>Plan Your Visit</h2>
+          <p>A digital peek into a small vintage shop.</p>
+
+          <ul class="visit-list">
+            <li>Browse curated collections.</li>
+            <li>Share your favorite era.</li>
+          </ul>
+        </div>
+
+        <form class="visit-form">
+          <h3>Stay in the Loop</h3>
+          <p>Sign up for updates.</p>
+
+          <label for="email">Email</label>
+          <input id="email" type="email" placeholder="you@example.com" required>
+
+          <label for="era">Favorite fashion era</label>
+          <select id="era">
+            <option>Late 1970s</option>
+            <option>1980s</option>
+            <option>1990s</option>
+            <option>1920s</option>
+            <option>Early 2000s</option>
+            <option>All of the above</option>
+          </select>
+
+          <button type="submit" class="btn primary">Notify Me</button>
+          <p id="form-message" class="form-message"></p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Popup / Lightbox -->
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+    <div class="lightbox-backdrop"></div>
+    <div class="lightbox-content">
+      <button class="lightbox-close" aria-label="Close">✕</button>
+      <img id="lightbox-image" src="" alt="">
+      <p id="lightbox-caption"></p>
+    </div>
+  </div>
+
+  <!-- Back to top -->
+  <button id="back-to-top" class="back-to-top">↑</button>
+
 </body>
+
 </html>
